@@ -1,0 +1,52 @@
+/*  BY USING CONDITIONS
+#include<stdio.h>
+int main(){
+    int oil;
+    scanf("%d", &oil);
+    if (oil>=80) {
+        printf("oil lvl is good ");
+    }
+    else if(oil>=50) {
+        printf("oil lvl is moderate");
+    }
+    else if(oil>=20) {
+        printf("oil lvl is low");
+    }
+    else if(oil>=0) {
+        printf("oil lvl is critical");
+    }
+    else {
+        printf("invalid oil lvl input");
+    }
+    return 0;
+}
+
+*/
+
+#include<stdio.h>
+int main(){
+    int oil;
+    scanf("%d", &oil);
+    switch (oil / 10){
+        case 10:
+        case 9:
+        case 8:
+         printf("oil lvl is good");
+         break;
+        case 7:
+        case 6:
+        case 5:
+         printf("oil lvl is moderate");
+         break;
+        case 4:
+        case 3:
+        case 2:
+         printf("oil lvl is low");
+         break;
+        case 1:
+        case 0:
+         printf("oil lvl is critical");
+         break;
+
+    }
+}
