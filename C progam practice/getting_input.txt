@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+    int a , b;
+    scanf("%d%d",&a, &b);//here the & is used to specific the address of the input variable
+    printf("%d", a+b);
+    return 0;
+    
+}
