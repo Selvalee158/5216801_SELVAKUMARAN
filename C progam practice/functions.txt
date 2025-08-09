@@ -1,0 +1,26 @@
+#include<stdio.h>
+// creation of a func
+void sucks(){
+    printf("Hello\n");                       //void function has no return type
+    printf("This world suckzzzzzzz\n");
+}
+
+//muliple parameter func
+void greeting(char name[], int age){
+    printf("Hello %s!, your age is %d", name,age);
+}
+
+//using a return func 
+int add(int x,int y){
+    return x+y;
+}
+
+//calling a func
+int main(){
+    //sucks();
+    //greeting("selva",21);
+    int sum = add(5,2);
+    printf("sum is %d",sum);
+    return 0;
+}
+

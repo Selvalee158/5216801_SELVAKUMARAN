@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    //creation of a string
+    char name[] = "Selva ";
+    printf(name);
+
+    //getting input from the user
+    char names[10];
+    scanf("%s\n", names); // if a space is there in the text then scanf can only take the first word as input
+    printf(names);
+
+    // use of fgets it can store an entire line
+    char namess[50];
+    fgets(namess,50,stdin);
+    printf(namess);
+}
+
+

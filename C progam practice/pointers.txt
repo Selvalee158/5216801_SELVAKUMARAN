@@ -1,0 +1,32 @@
+#include<stdio.h>
+//accessing pointers using a func
+/*int change(int *p){
+    *p = 100;
+}
+*/
+
+int main(){
+    //accessing array using pointers
+    int arr[] = {1,2,3,4};
+    int *p = arr;
+    for(int i=0;i<4;i++){
+        printf("%d\n",*p);
+        p++;
+    }
+
+
+    //printf("before accessing %d\n",a);
+    //change(&a);
+    //printf("after accessing %d",a);
+
+    //creating a pointer
+   /* int *p = &a; // now p will have the address of a
+    printf("%d\n",a);// value of a
+    printf("%d\n",&a);// address of a
+    printf("%d\n",p);// again it will deliver the address of a
+    printf("%d\n",*p);//it will show the value that is stored in p (i.e value of a) 
+*/
+
+}
+
+
